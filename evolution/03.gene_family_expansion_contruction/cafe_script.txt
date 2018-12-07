@@ -1,0 +1,17 @@
+#! path-to-cafe
+date
+version
+#specify data file, p-value threshold, # of threads to use, and log file
+load -i cafeinput.tab -p 0.05 -t 24 -l log.txt
+
+#the phylogenetic tree structure with branch lengths
+tree ((Vvi:116,((Rco:98,(Cpa:77,Ath:77):21):8,((Fve:54,Ppe:54):44,(Jre:61,(Omu:7,Ore:7):54):37):8):8):29,Osa:145)
+
+#search for 2 parameter model
+lambda -s 
+
+#report
+report resultfile
+
+date
+
